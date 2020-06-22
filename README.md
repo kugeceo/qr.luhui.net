@@ -12,3 +12,17 @@ http://qr.luhui.net/
 
 
 https://luhuiqr.netlify.app/
+
+
+
+
+
+
+![鲁虺在线生成二维码展示](截图_20200622154505.jpg)
+
+
+
+
+
+
+
