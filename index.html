@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-	<meta name="Keywords" content="ÔÚÏßÉú³É¶şÎ¬Âë,¶şÎ¬Âë,Ò»Îª×ÊÔ´"/>
-	<title>ÔÚÏß¶şÎ¬ÂëAPI½Ó¿Ú| Ò»Îª×ÊÔ´</title>
+	<meta name="Keywords" content="é²è™ºåœ¨çº¿ç”ŸæˆäºŒç»´ç ,äºŒç»´ç ,é²è™ºæ–‡åŒ–ç½‘"/>
+	<title>é²è™ºåœ¨çº¿äºŒç»´ç APIæ¥å£| é²è™ºæ–‡åŒ–ç½‘</title>
   <script src="./jquery.min.js"></script>
   <script src="./jquery-qrcode.min.js"></script> 
   	<style>
@@ -22,7 +22,7 @@
 		});
   	</script> 
   	<script type="text/javascript">
-		//µ¯³öÒş²Ø²ã
+		//å¼¹å‡ºéšè—å±‚
 		function ShowDiv(show_div,bg_div){
 			document.getElementById(show_div).style.display='block';
 			document.getElementById(bg_div).style.display='block' ;
@@ -31,7 +31,7 @@
 			// bgdiv.style.height = $(document).height();
 			$("#"+bg_div).height($(document).height());
 		};
-		//¹Ø±Õµ¯³ö²ã
+		//å…³é—­å¼¹å‡ºå±‚
 		function CloseDiv(show_div,bg_div){
 			document.getElementById(show_div).style.display='none';
 			document.getElementById(bg_div).style.display='none';
@@ -75,57 +75,93 @@
 </head>
 <body>
    <div id="container">
-	<!--µ¯³ö²ãÊ±±³¾°²ãDIV--> 
+	<!--å¼¹å‡ºå±‚æ—¶èƒŒæ™¯å±‚DIV--> 
   	<div id="fade" class="black_overlay"> </div> 
   	<div id="MyDiv" class="white_content">  
    		<div style="text-align: right; cursor: default; height: 40px; margin-top: 20px; margin-right: 10px;"> 
-    		<span class="close_button" onclick="CloseDiv('MyDiv','fade')">¹Ø±Õ</span> 
+    		<span class="close_button" onclick="CloseDiv('MyDiv','fade')">å…³é—­</span> 
 		</div> 
 		<div class="white_content_small" id="containerowell"> 
-   	 		<h2 style="text-align: center;">Ê¹ÓÃAPI·şÎñ´´½¨¶şÎ¬Âë</h2> 
-    		<h3>»ù´¡ URL</h3> 
-    		<p style="line-height: 22px;">&nbsp;&nbsp;<strong>ÊäÈë</strong>: https://tool.iowen.cn/qrcode?url=XXX<br /> &nbsp;&nbsp;<strong>XXX</strong>: ÊÇ¶şÎ¬ÂëµÄÄÚÈİ £¬ÇëÊäÈëÈÎÒâ¸öÓĞĞ§µÄ×Ö·û£¬Ö§³ÖÖĞÎÄ£¬ ÍøÖ·Ó¦°üº¬ http:// »ò https://<br /> &nbsp;&nbsp;<strong>µ÷ÓÃ</strong>: <code>&lt;img src=&quot;https://tool.iowen.cn/qrcode?url=XXX&quot;&gt;</code> </p> 
-    		<h3>×Ô¶¨Òå²ÎÊıËµÃ÷</h3> 
-    		<p style="line-height: 22px;"> &nbsp;&nbsp;<strong>url</strong>: ¶şÎ¬Âë¶ÔÓ¦µÄÄÚÈİ,Ö§³ÖÖĞÎÄ<br /> &nbsp;&nbsp;<strong>size</strong>: ¶şÎ¬Âë³ß´ç£¬µ¥Î»ÎªÏñËØ£¨Ä¬ÈÏÖµ£º300px£©<br /> &nbsp;&nbsp;<strong>m</strong>: ¶şÎ¬Âë°×É«±ß¿ò³ß´ç£¬µ¥Î»ÎªÏñËØ£¨Ä¬ÈÏÖµ: 20px£©<br /> &nbsp;&nbsp;<strong>level</strong>: Èİ´í¼¶±ğ(errorLevel)£¬¿ÉÑ¡²ÎÊıÈçÏÂ(Ä¬ÈÏÖµ L)£º<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- L</strong>&nbsp;&nbsp;7%µÄ×ÖÂë¿É±»ĞŞÕı<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- M</strong>&nbsp;&nbsp;15%µÄ×ÖÂë¿É±»ĞŞÕı<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- Q</strong>&nbsp;&nbsp;25%µÄ×ÖÂë¿É±»ĞŞÕı<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- H</strong>&nbsp;&nbsp;30%µÄ×ÖÂë¿É±»ĞŞÕı</p> 
+   	 		<h2 style="text-align: center;">ä½¿ç”¨APIæœåŠ¡åˆ›å»ºäºŒç»´ç </h2> 
+    		<h3>åŸºç¡€ URL</h3> 
+    		<p style="line-height: 22px;">&nbsp;&nbsp;<strong>è¾“å…¥</strong>: http://qr.luhui.net/?url=XXX<br /> &nbsp;&nbsp;<strong>XXX</strong>: æ˜¯äºŒç»´ç çš„å†…å®¹ ï¼Œè¯·è¾“å…¥ä»»æ„ä¸ªæœ‰æ•ˆçš„å­—ç¬¦ï¼Œæ”¯æŒä¸­æ–‡ï¼Œ ç½‘å€åº”åŒ…å« http:// æˆ– https://<br /> &nbsp;&nbsp;<strong>è°ƒç”¨</strong>: <code>&lt;img src=&quot;http://qr.luhui.net/?url=XXX&quot;&gt;</code> </p> 
+    		<h3>è‡ªå®šä¹‰å‚æ•°è¯´æ˜</h3> 
+    		<p style="line-height: 22px;"> &nbsp;&nbsp;<strong>url</strong>: äºŒç»´ç å¯¹åº”çš„å†…å®¹,æ”¯æŒä¸­æ–‡<br /> &nbsp;&nbsp;<strong>size</strong>: äºŒç»´ç å°ºå¯¸ï¼Œå•ä½ä¸ºåƒç´ ï¼ˆé»˜è®¤å€¼ï¼š300pxï¼‰<br /> &nbsp;&nbsp;<strong>m</strong>: äºŒç»´ç ç™½è‰²è¾¹æ¡†å°ºå¯¸ï¼Œå•ä½ä¸ºåƒç´ ï¼ˆé»˜è®¤å€¼: 20pxï¼‰<br /> &nbsp;&nbsp;<strong>level</strong>: å®¹é”™çº§åˆ«(errorLevel)ï¼Œå¯é€‰å‚æ•°å¦‚ä¸‹(é»˜è®¤å€¼ L)ï¼š<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- L</strong>&nbsp;&nbsp;7%çš„å­—ç å¯è¢«ä¿®æ­£<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- M</strong>&nbsp;&nbsp;15%çš„å­—ç å¯è¢«ä¿®æ­£<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- Q</strong>&nbsp;&nbsp;25%çš„å­—ç å¯è¢«ä¿®æ­£<br /> &nbsp;&nbsp;&nbsp;&nbsp;<strong>- H</strong>&nbsp;&nbsp;30%çš„å­—ç å¯è¢«ä¿®æ­£</p> 
    		</div> 
   	</div> 
-<h1 class="title tc">ÔÚÏßÉú³É¶şÎ¬Âë</h1>
-<!--²ÎÊı±íµ¥-->
+<h1 class="title tc">åœ¨çº¿ç”ŸæˆäºŒç»´ç </h1>
+<!--å‚æ•°è¡¨å•-->
 <uwl>
 <ul id="qrcode" class="tc">
- <input class="show_button" id="Button1" type="button" value="API·şÎñ"  />
+ <input class="show_button" id="Button1" type="button" value="APIæœåŠ¡"  />
 	<li>
-		<span>¶şÎ¬ÂëÄÚÈİ£¨Ö§³ÖÖĞÎÄ£© <font color="red">*</font></span>
-		<input type="text" value="" placeholder="ÇëÊäÈë¶şÎ¬ÂëÄÚÈİ£¬ÎÄ±¾£¯Á´½Ó" class="ipt" id="content" required />
+		<span>äºŒç»´ç å†…å®¹ï¼ˆæ”¯æŒä¸­æ–‡ï¼‰ <font color="red">*</font></span>
+		<input type="text" value="" placeholder="è¯·è¾“å…¥äºŒç»´ç å†…å®¹ï¼Œæ–‡æœ¬ï¼é“¾æ¥" class="ipt" id="content" required />
 	</li>
 	<li class="lll">
-		<span>³ß´ç</span>
-		<input type="text" value="300" placeholder="¶şÎ¬Âë³ß´ç(Ñ¡Ìî)" onKeyUp="value=value.replace(/[^\d]/g,'')" maxlength="3" class="ipl" id="size" /> px
+		<span>å°ºå¯¸</span>
+		<input type="text" value="300" placeholder="äºŒç»´ç å°ºå¯¸(é€‰å¡«)" onKeyUp="value=value.replace(/[^\d]/g,'')" maxlength="3" class="ipl" id="size" /> px
 	</li>
 	<li class="lll">
-		<span>°×¿ò³ß´ç</span>
-		<input type="text" value="20" placeholder="¶şÎ¬Âë°×É«±ß¿ò³ß´ç(Ñ¡Ìî)" onKeyUp="value=value.replace(/[^\d]/g,'')" maxlength="2" class="ipl" id="border_size" /> px
+		<span>ç™½æ¡†å°ºå¯¸</span>
+		<input type="text" value="20" placeholder="äºŒç»´ç ç™½è‰²è¾¹æ¡†å°ºå¯¸(é€‰å¡«)" onKeyUp="value=value.replace(/[^\d]/g,'')" maxlength="2" class="ipl" id="border_size" /> px
 	</li>
-  	<p style="color: #bb7800;font-size: 10px;">×¢£º³ß´çµ¥Î»ÎªÏñËØ</p>
+  	<p style="color: #bb7800;font-size: 10px;">æ³¨ï¼šå°ºå¯¸å•ä½ä¸ºåƒç´ </p>
 	<li>
-		<span>¶şÎ¬ÂëÑÕÉ«</span>
-		<input type="text" placeholder="Ñ¡Ôñ¶şÎ¬ÂëÑÕÉ«(Ñ¡Ìî)"  class="ipt jscolor {closable:true,closeText:'¹Ø±Õ',onFineChange:'updateColor(this)'}" maxlength="6" readonly disabled value="000000" id="color">
-	</li>
-	<li>
-		<span>×Ô¶¨Òå°æÈ¨</span>
-		<input type="text" value="" placeholder="ÊäÈëÎÄ×Ö£¬×î¶à8¸ö×Ö·û(Ñ¡Ìî)" maxlength="8" class="ipt" id="copyright" />
+		<span>äºŒç»´ç é¢œè‰²</span>
+		<input type="text" placeholder="é€‰æ‹©äºŒç»´ç é¢œè‰²(é€‰å¡«)"  class="ipt jscolor {closable:true,closeText:'å…³é—­',onFineChange:'updateColor(this)'}" maxlength="6" readonly disabled value="000000" id="color">
 	</li>
 	<li>
-		<input type="button" value="Éú³É¶şÎ¬Âë" id="submit"/>
+		<span>è‡ªå®šä¹‰ç‰ˆæƒ</span>
+		<input type="text" value="" placeholder="è¾“å…¥æ–‡å­—ï¼Œæœ€å¤š8ä¸ªå­—ç¬¦(é€‰å¡«)" maxlength="8" class="ipt" id="copyright" />
 	</li>
 	<li>
-		<a href="javascript:;" class="dn" id="download" onclick="qr.download('#qrcodes')">ÏÂÔØ¶şÎ¬Âë</a>
+		<input type="button" value="ç”ŸæˆäºŒç»´ç " id="submit"/>
+	</li>
+	<li>
+		<a href="javascript:;" class="dn" id="download" onclick="qr.download('#qrcodes')">ä¸‹è½½äºŒç»´ç </a>
 	</li>
 </ul>
-<canvas id="qrcodes" class="dqn" width="300" height="300">ÄúµÄä¯ÀÀÆ÷²»Ö§³Öcanvas±êÇ©¡£</canvas>
+<canvas id="qrcodes" class="dqn" width="300" height="300">æ‚¨çš„æµè§ˆå™¨ä¸æ”¯æŒcanvasæ ‡ç­¾ã€‚</canvas>
     </uwl>
+
+<!--ç™¾åº¦è‡ªåŠ¨æ¨é€ä»£ç -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--ç™¾åº¦è‡ªåŠ¨æ¨é€ä»£ç -->
+
+
+<!-- ç½‘å€å®‰å…¨æ’ä»¶å¼€å§‹ -->
+<script type="text/javascript">
+	var _svq_ = _svq_ || [];
+	_svq_.push(['set_api_key', '16adflfafads9gf28327005056b68c3d']);
+	_svq_.push(['set_noicon_class', '']); //é“¾æ¥å‰ä¸æ˜¾ç¤ºä»»ä½•å›¾æ ‡ï¼Œå¦‚æœéœ€è¦æ˜¾ç¤ºï¼Œè¯·å»æ‰è¿™å¥
+	_svq_.push(['set_nopopup_class', '-sv-no-popup']); 
+	_svq_.push(['check_page']);
+	(function(){   
+		var aq = document.createElement('script');
+		aq.type = 'text/javascript'; 
+		aq.async = true;   
+		aq.charset = 'utf-8';
+		aq.src = 'http://openapi.anquan.org/static/aq.js';    
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(aq, s); 
+	})();
+</script>	
+<!-- ç½‘å€å®‰å…¨æ’ä»¶ç»“æŸ --> 
+
+<div style="display:none">
+    <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
+</div>
+
 <div class="footer"  >
-<p style="text-align: right; color:#ccc">Copyright ? 2019<a  href="https://www.iowen.cn/" style="color: #fff; text-decoration: none;" target="_blank"> Ò»Îª×ÊÔ´Íø</a></p>
+<p style="text-align: right; color:#ccc">Copyright&nbsp;2004-01-11&nbsp;<a href="http://www.luhui.net" title="é²è™ºæ–‡åŒ–ç½‘">luhui.net</a>&nbsp;all rights reserved.</p>
 </div>
      </div>
   <script src="jscolor.js"></script>
@@ -137,29 +173,29 @@
 	var $qrcodes = getID('qrcodes'), //canvas DOM
 		$download = getID('download'), //download DOM
 		$color = getID('color'),
-		defaultQr = 'data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==', // Ä¬ÈÏ¶şÎ¬ÂëÍ¼Æ¬
+		defaultQr = 'data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==', // é»˜è®¤äºŒç»´ç å›¾ç‰‡
 		toast_timer = 0,
 		qr = {};
  
-	//»ñÈ¡Ñ¡ÖĞµÄÑÕÉ«£¬µÃµ½rgbÖµ
+	//è·å–é€‰ä¸­çš„é¢œè‰²ï¼Œå¾—åˆ°rgbå€¼
 	function updateColor(picker) {
-      console.log("µÃµ½rgbÖµ");
+      console.log("å¾—åˆ°rgbå€¼");
 		qr.color = Math.round(picker.rgb[0])+','+Math.round(picker.rgb[1])+','+Math.round(picker.rgb[2]);
-		// $color.jscolor.hide(); //¹Ø±ÕÈ¡É«Æ÷
+		// $color.jscolor.hide(); //å…³é—­å–è‰²å™¨
 	}
 
 	/*
-	*  JS²Ù×÷»º´æ
+	*  JSæ“ä½œç¼“å­˜
 	*  by haibao [http://www.hehaibao.com/] 
-	*  ¸ü¶àÊ¹ÓÃ·½·¨Çë¿´£º[https://github.com/hehaibao/cacheJS]
+	*  æ›´å¤šä½¿ç”¨æ–¹æ³•è¯·çœ‹ï¼š[https://github.com/hehaibao/cacheJS]
 	**/
 	var cacheJS = {
-		errorTxt: 'ÄúµÄWebä¯ÀÀÆ÷²»Ö§³Ö±¾µØ´æ´¢ÉèÖÃ¡£ÔÚSafariÖĞ£¬×î³£¼ûµÄÔ­ÒòÊÇÊ¹ÓÃ¡°ÎŞºÛä¯ÀÀÄ£Ê½¡±¡£ÓĞĞ©ÉèÖÃ¿ÉÄÜÎŞ·¨±£´æ£¬Ä³Ğ©¹¦ÄÜ¿ÉÄÜÎŞ·¨Õı³£¹¤×÷¡£',	
+		errorTxt: 'æ‚¨çš„Webæµè§ˆå™¨ä¸æ”¯æŒæœ¬åœ°å­˜å‚¨è®¾ç½®ã€‚åœ¨Safariä¸­ï¼Œæœ€å¸¸è§çš„åŸå› æ˜¯ä½¿ç”¨â€œæ— ç—•æµè§ˆæ¨¡å¼â€ã€‚æœ‰äº›è®¾ç½®å¯èƒ½æ— æ³•ä¿å­˜ï¼ŒæŸäº›åŠŸèƒ½å¯èƒ½æ— æ³•æ­£å¸¸å·¥ä½œã€‚',	
 		/**
-		 * ´æ´¢storageµ¥¸öÊôĞÔ
-		 * @param key Ãû³Æ
-		 * @param val Öµ
-		 * @param type [object] ÀàĞÍ[¿ÉÑ¡ÖµsessionStorage/localStorage]£¬²»ÌîÔòÄ¬ÈÏsessionStorage
+		 * å­˜å‚¨storageå•ä¸ªå±æ€§
+		 * @param key åç§°
+		 * @param val å€¼
+		 * @param type [object] ç±»å‹[å¯é€‰å€¼sessionStorage/localStorage]ï¼Œä¸å¡«åˆ™é»˜è®¤sessionStorage
 		 * **/
 		setStorage: function (key, val, type) {
 			type = type ? type : window.sessionStorage;
@@ -170,9 +206,9 @@
 			}
 		},
 		/**
-		 * ¶ÁÈ¡storageµ¥¸öÊôĞÔ
-		 * @param key Ãû³Æ
-		 * @param type [object] ÀàĞÍ[¿ÉÑ¡ÖµsessionStorage/localStorage]£¬²»ÌîÔòÄ¬ÈÏsessionStorage
+		 * è¯»å–storageå•ä¸ªå±æ€§
+		 * @param key åç§°
+		 * @param type [object] ç±»å‹[å¯é€‰å€¼sessionStorage/localStorage]ï¼Œä¸å¡«åˆ™é»˜è®¤sessionStorage
 		 * **/
 		getStorage: function (key, type) {
 			type = type ? type : window.sessionStorage;
@@ -183,9 +219,9 @@
 			}
 		},
 		/**
-		 * É¾³ıstorage¶ÔÏó
-		 * @param key Ãû³Æ
-		 * @param type [object] ÀàĞÍ[¿ÉÑ¡ÖµsessionStorage/localStorage]£¬²»ÌîÔòÄ¬ÈÏsessionStorage
+		 * åˆ é™¤storageå¯¹è±¡
+		 * @param key åç§°
+		 * @param type [object] ç±»å‹[å¯é€‰å€¼sessionStorage/localStorage]ï¼Œä¸å¡«åˆ™é»˜è®¤sessionStorage
 		 * **/
 		delStorage: function (key, type) {
 			type = type ? type : window.sessionStorage;
@@ -197,7 +233,7 @@
 			}
 		},
 		/**
-		 * ¼ì²âÊÇ·ñÖ§³ÖlocalStorage»òsessionStorage
+		 * æ£€æµ‹æ˜¯å¦æ”¯æŒlocalStorageæˆ–sessionStorage
 		 */
 		checkSupport: function () {
 			var testKey = 'test', storage = window.sessionStorage;
@@ -220,32 +256,32 @@
 			$copyright = getID('copyright'),
 			$btn = getID('submit');
 
-		// Éú³É¶şÎ¬Âë°´Å¥ µã»÷ÊÂ¼ş
+		// ç”ŸæˆäºŒç»´ç æŒ‰é’® ç‚¹å‡»äº‹ä»¶
 		$btn.onclick = function() {
 			
-			$this.reset(); //Ã¿´Îµã»÷¶¼ÏÈÖØÖÃ
+			$this.reset(); //æ¯æ¬¡ç‚¹å‡»éƒ½å…ˆé‡ç½®
 			var protocol = 'http://',
 				protocol_https = 'https://',
-				con = $content.value, //ÓÃ»§ÌîĞ´µÄÄÚÈİ
+				con = $content.value, //ç”¨æˆ·å¡«å†™çš„å†…å®¹
 				str = con.substr(0,7).toLowerCase(),
 				str_https = con.substr(0,8).toLowerCase(),
-				//con = (str == protocol || str_https == protocol_https) ? con : (str_https == protocol_https ? protocol_https : protocol) + con, //ÓÃ»§Èç¹ûÍü¼ÇÌîĞ´Ğ­Òé£¬×Ô¶¯¼ÓÉÏ
-				size = $size && $size.value || 300, //¶şÎ¬Âë³ß´ç
-				border_size = $border_size && $border_size.value || 20, //±ß¿ò³ß´ç
-				copyright = $copyright && $copyright.value || '', //×Ô¶¨Òå°æÈ¨ÎÄ×Ö
-				color = $color && $color.value || '000000'; //×Ô¶¨Òå¶şÎ¬ÂëÑÕÉ«
+				//con = (str == protocol || str_https == protocol_https) ? con : (str_https == protocol_https ? protocol_https : protocol) + con, //ç”¨æˆ·å¦‚æœå¿˜è®°å¡«å†™åè®®ï¼Œè‡ªåŠ¨åŠ ä¸Š
+				size = $size && $size.value || 300, //äºŒç»´ç å°ºå¯¸
+				border_size = $border_size && $border_size.value || 20, //è¾¹æ¡†å°ºå¯¸
+				copyright = $copyright && $copyright.value || '', //è‡ªå®šä¹‰ç‰ˆæƒæ–‡å­—
+				color = $color && $color.value || '000000'; //è‡ªå®šä¹‰äºŒç»´ç é¢œè‰²
 				//qrcode = $this.getUrlPath() +'?m='+border_size+'&level=L&size='+size+'&url='+encodeURIComponent(con)+'&t='+new Date();
 
           
 			if(con == '' || con == protocol || con == protocol_https) {
-				//Èç¹ûÄÚÈİÎª¿Õ£¬ÔòÖØÖÃ
-				$this.showToast('ÇëÊäÈë¶şÎ¬ÂëÄÚÈİ¡«');
-				//ÊäÈë¿ò½¹µã¸Ä±ä
+				//å¦‚æœå†…å®¹ä¸ºç©ºï¼Œåˆ™é‡ç½®
+				$this.showToast('è¯·è¾“å…¥äºŒç»´ç å†…å®¹ï½');
+				//è¾“å…¥æ¡†ç„¦ç‚¹æ”¹å˜
 				$content.focus();
 				return;
 			} 
   
-			// »º´æ¶şÎ¬ÂëÄÚÈİ,Í¼Æ¬,ÎÄ×Ö,±ß¿ò
+			// ç¼“å­˜äºŒç»´ç å†…å®¹,å›¾ç‰‡,æ–‡å­—,è¾¹æ¡†
 			 
 			cacheJS.setStorage('qrcontent', con);
 			cacheJS.setStorage('qrcopyright', copyright);
@@ -256,7 +292,7 @@
 			 $this.draw(size, border_size ,con ,color,copyright);
 		}
 
-		// Èç¹ûÓĞ»º´æ(¶şÎ¬ÂëÄÚÈİºÍÍ¼Æ¬)£¬Ôò¶ÁÈ¡»º´æµÄÖµ£¨Ä¿µÄ£ºÎªÁËË¢ĞÂÒ³ÃæÒ²»á´æÔÚ£©
+		// å¦‚æœæœ‰ç¼“å­˜(äºŒç»´ç å†…å®¹å’Œå›¾ç‰‡)ï¼Œåˆ™è¯»å–ç¼“å­˜çš„å€¼ï¼ˆç›®çš„ï¼šä¸ºäº†åˆ·æ–°é¡µé¢ä¹Ÿä¼šå­˜åœ¨ï¼‰
 		if(cacheJS.getStorage('qrcopyright') !== 'undefined') {
 			$copyright.value = cacheJS.getStorage('qrcopyright');	
 		}
@@ -279,7 +315,7 @@
 		 
 	}
 	qr.showToast = function(msg, t) {
-		// ÏÔÊ¾ÌáÊ¾¿ò
+		// æ˜¾ç¤ºæç¤ºæ¡†
 		var alert = getID("toast");
 	    if(alert === null){
 	        alert =  document.createElement("div");
@@ -291,7 +327,7 @@
 	    document.body.appendChild(alert);
 	    t = t ? t : 1500;
 	    toast_timer = setTimeout(function() {
-	    	// Òş²ØÌáÊ¾¿ò
+	    	// éšè—æç¤ºæ¡†
 	    	if(alert) {
 	    		document.body.removeChild(alert); 
 	    		clearTimeout(toast_timer);
@@ -300,7 +336,7 @@
 	}
 
 	qr.reset = function() {
-		// ÖØÖÃ¶şÎ¬ÂëÄÚÈİÊäÈë¿ò
+		// é‡ç½®äºŒç»´ç å†…å®¹è¾“å…¥æ¡†
 		$qrcodes.style.display = 'none';
 		$download.style.display = 'none';
 		cacheJS.delStorage('qrcode');
@@ -315,13 +351,13 @@
      	console.log(color);
       	$qrcodes.setAttribute("width",size);
 		$qrcodes.setAttribute("height",size);
-		// canvas»æÖÆ¶şÎ¬Âë
+		// canvasç»˜åˆ¶äºŒç»´ç 
 		if($qrcodes.getContext) {
 			var ctx = $qrcodes.getContext('2d'),
 				img = new Image(),
 				qrWidth = $qrcodes.width,
 				qrHeight = $qrcodes.height; 
-			ctx.clearRect(0,0,qrWidth,qrHeight); //Çå¿Õ»­²¼
+			ctx.clearRect(0,0,qrWidth,qrHeight); //æ¸…ç©ºç”»å¸ƒ
 	        img.onload = function() {
 				ctx.drawImage(img, 0, 0, qrWidth, qrHeight);
 			};
@@ -343,25 +379,25 @@
 	        $qrcodes.style.display = 'block';
 	        $download.style.display = 'block';
         } else {
-			this.toast('¸Ãä¯ÀÀÆ÷²»Ö§³Öcanvas..');
+			this.toast('è¯¥æµè§ˆå™¨ä¸æ”¯æŒcanvas..');
 		}
 	}
 
 	qr.download = function(el, picType) {
-		// ÏÂÔØ¶şÎ¬Âë
+		// ä¸‹è½½äºŒç»´ç 
 		//------------------------------------------------------------------------
-        //1.È·¶¨Í¼Æ¬µÄÀàĞÍ  »ñÈ¡µ½µÄÍ¼Æ¬¸ñÊ½ data:image/Png;base64,......
-        var type = picType || 'png'; //ÄãÏëÒªÊ²Ã´Í¼Æ¬¸ñÊ½ ¾ÍÑ¡Ê²Ã´°É, Ä¬ÈÏpng
+        //1.ç¡®å®šå›¾ç‰‡çš„ç±»å‹  è·å–åˆ°çš„å›¾ç‰‡æ ¼å¼ data:image/Png;base64,......
+        var type = picType || 'png'; //ä½ æƒ³è¦ä»€ä¹ˆå›¾ç‰‡æ ¼å¼ å°±é€‰ä»€ä¹ˆå§, é»˜è®¤png
         var d = document.querySelector(el);
         var imgdata = d.toDataURL(type);
-        //2.0 ½«mime-type¸ÄÎªimage/octet-stream,Ç¿ÖÆÈÃä¯ÀÀÆ÷ÏÂÔØ
+        //2.0 å°†mime-typeæ”¹ä¸ºimage/octet-stream,å¼ºåˆ¶è®©æµè§ˆå™¨ä¸‹è½½
         var fixtype = function(type) {
             type = type.toLocaleLowerCase().replace(/jpg/i,'jpeg');
             var r = type.match(/png|jpeg|bmp|gif/)[0];
             return 'image/'+r;
         };
         imgdata = imgdata.replace(fixtype(type),'image/octet-stream');
-        //3.0 ½«Í¼Æ¬±£´æµ½±¾µØ
+        //3.0 å°†å›¾ç‰‡ä¿å­˜åˆ°æœ¬åœ°
         var savaFile = function(data,filename) {
             var save_link = document.createElementNS('http://www.w3.org/1999/xhtml', 'a');
             save_link.href = data;
@@ -370,14 +406,14 @@
             event.initMouseEvent('click',true,false,window,0,0,0,0,0,false,false,false,false,0,null);
             save_link.dispatchEvent(event);
         };
-        var filename = 'canvas-qr-'+new Date().getTime()+'.'+type; //ÓÃµ±Ç°Ê±¼ä´Á×öÎªÍ¼Æ¬Ãû×Ö
+        var filename = 'canvas-qr-'+new Date().getTime()+'.'+type; //ç”¨å½“å‰æ—¶é—´æˆ³åšä¸ºå›¾ç‰‡åå­—
         savaFile(imgdata, filename);
 	}
 	
 	qr.getUrlPath = function() {
-		// »ñÈ¡URLµØÖ·
-		// Õâ²¿·Ö´úÂë¾ÍÊÇ´¦Àí±êÌâ¼æÈİÎÊÌâµÄ¡£
-		// ÓÉÓÚÔÚChrome window.location.origin ÊôĞÔÊÇÖ§³ÖµÄ£¬µ«ÊÇÔÚIE11²»Ö§³Ö£¬»áµ¼ÖÂÎŞ·¨Õı³£·­Ò³¡£
+		// è·å–URLåœ°å€
+		// è¿™éƒ¨åˆ†ä»£ç å°±æ˜¯å¤„ç†æ ‡é¢˜å…¼å®¹é—®é¢˜çš„ã€‚
+		// ç”±äºåœ¨Chrome window.location.origin å±æ€§æ˜¯æ”¯æŒçš„ï¼Œä½†æ˜¯åœ¨IE11ä¸æ”¯æŒï¼Œä¼šå¯¼è‡´æ— æ³•æ­£å¸¸ç¿»é¡µã€‚
 		var loc = window.location;
         var portStr = "";
         if(loc.port != 80) { 
