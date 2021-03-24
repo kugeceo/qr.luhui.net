@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title data-i18n="scanTitle"></title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <style type="text/css">
+    html {
+      font-size: 16px;
+    }
+    #previewCanvas, #previewVideo {
+      border: 4px solid var(--danger);
+      display: inline-block;
+      vertical-align: bottom;
+      max-width: 100%;
+      max-height: 40vh;
+    }
+    .icon-btn {
+      width: 1.5rem;
+      height: 1.5rem;
+      cursor: pointer;
+    }
+    .head-icon {
+      width: 1.75rem;
+      height: 1.75rem;
+      vertical-align: middle;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background-color: #121212; color: #FFFFFF; }
+      img {
+        filter: invert(100%);
+      }
+    }
+  </style>
+</head>
+<body class="pt-3 pb-2">
+  <div class="container">
+    <h1 class="text-center mb-5" data-i18n="scanTitle"></h1>
+    <div class="row mb-5">
+      <div class="col text-center">
+        <canvas id="previewCanvas" width="638" height="638"></canvas>
+        <video id="previewVideo" playsinline autoplay class="d-none"></video>
+      </div>
+      <div class="col d-flex flex-column">
+        <div class="row align-items-center">
+          <h3 class="col-auto mr-auto" data-i18n="scanResult"></h3>
+          <div class="col-auto">
+            <span class="d-none text-success mr-1" id="copied" data-i18n="scanCopied"></span>
+            <img src="img/copy.svg" id="copy" class="icon-btn">
+            <img src="img/launch.svg" id="launch" class="icon-btn ml-1">
+          </div>
+        </div>
+        <div class="flex-grow-1">
+          <textarea class="form-control h-100" id="qrResult"></textarea>
+        </div>
+      </div>
+    </div>
+    <div id="container-urlinput">
+      <div class="form-group">
+        <h3><img src="img/link.svg" class="head-icon"> <span data-i18n="scanURL"></span></h3>
+        <input type="url" class="form-control" id="inputURL" placeholder="https://www.example.com/qrcode.png">
+      </div>
+      <div class="mb-5">
+        <button id='loadUrlBtn' type="button" class="btn btn-primary" data-i18n="scanUrlBtn"></button>
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col">
+        <h3><img src="img/videocam.svg" class="head-icon"> <span data-i18n="scanCamera"></span></h3>
+        <div>
+          <button id='camScan' type="button" class="btn btn-primary mr-1" data-i18n="scanCamBtn"></button>
+          <button id='pipBtn' type="button" class="btn btn-secondary d-none" data-i18n="scanPipBtn"></button>
+        </div>
+      </div>
+      <div class="col" id="container-fileinput">
+        <h3><img src="img/file.svg" class="head-icon"> <span data-i18n="scanFile"></span></h3>
+        <input type="file" accept="image/*" class="form-control-file pt-1" id="inputFile">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/decodeLib.js"></script>
+  <script type="text/javascript" src="decode.js"></script>
+</body>
+</html>
